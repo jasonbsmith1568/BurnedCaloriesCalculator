@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ResourcesSelectionDialog">
+		<item value="false" key="showFilesInAllProjects"/>
+	</section>
+	<section name="NewProjectWizard">
+	</section>
+	<section name="SaveAsImageDialogSettings">
+		<item value="AUTO" key="orientation"/>
+		<item value="false" key="hideAnnotations"/>
+		<item value="LETTER" key="pageSize"/>
+		<item value="false" key="hideExportScreenflow"/>
+		<item value="false" key="highlightLinks"/>
+		<item value="FIT_TO_PAGE" key="pdfFormat"/>
+		<list key="folderHistory">
+			<item value="C:\Users\Jason\Desktop"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="1" timestamp="1422388167773" analysisTimestamp="1422388157157" release="">
+  <Project projectName="DVDManager">
+    <Jar>C:\Users\Jason\Desktop\Eclipse\DVDManager\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Jason\Desktop\Eclipse\DVDManager\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_25\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Jason\Desktop\Eclipse\DVDManager\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1">
+    <Class classname="DVD">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Class>
+    <Method classname="DVD" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="DVD" start="68" end="68" startBytecode="0" endBytecode="43" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Method>
+    <SourceLine classname="DVD" start="68" end="68" startBytecode="1" endBytecode="1" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    <SourceLine classname="DVD" start="68" end="68" startBytecode="1" endBytecode="1" sourcefile="DVD.java" sourcepath="DVD.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="DVD">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Class>
+    <Field classname="DVD" name="rating" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="DVD">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Class>
+    <Field classname="DVD" name="runningTime" signature="I" isStatic="false">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="DVD">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Class>
+    <Field classname="DVD" name="title" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="DVD" sourcefile="DVD.java" sourcepath="DVD.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1">
+    <Class classname="DVDCollection">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Class>
+    <Method classname="DVDCollection" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="DVDCollection" start="41" end="41" startBytecode="0" endBytecode="43" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Method>
+    <SourceLine classname="DVDCollection" start="41" end="41" startBytecode="1" endBytecode="1" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    <SourceLine classname="DVDCollection" start="41" end="41" startBytecode="1" endBytecode="1" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="DVDCollection">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Class>
+    <Field classname="DVDCollection" name="dvdArray" signature="[LDVD;" isStatic="false">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Field>
+    <SourceLine classname="DVDCollection" start="28" end="28" startBytecode="15" endBytecode="15" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="DVDCollection">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Class>
+    <Field classname="DVDCollection" name="numdvds" signature="I" isStatic="false">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Field>
+    <SourceLine classname="DVDCollection" start="27" end="27" startBytecode="6" endBytecode="6" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="DVDCollection">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Class>
+    <Field classname="DVDCollection" name="modified" signature="Z" isStatic="false">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="DVDCollection">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Class>
+    <Field classname="DVDCollection" name="sourceName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="DVDCollection" sourcefile="DVDCollection.java" sourcepath="DVDCollection.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DVDConsoleUI">
+      <SourceLine classname="DVDConsoleUI" sourcefile="DVDConsoleUI.java" sourcepath="DVDConsoleUI.java"/>
+    </Class>
+    <Method classname="DVDConsoleUI" name="&lt;init&gt;" signature="(LDVDCollection;)V" isStatic="false">
+      <SourceLine classname="DVDConsoleUI" start="14" end="17" startBytecode="0" endBytecode="87" sourcefile="DVDConsoleUI.java" sourcepath="DVDConsoleUI.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DVDConsoleUI" start="16" end="16" startBytecode="17" endBytecode="17" sourcefile="DVDConsoleUI.java" sourcepath="DVDConsoleUI.java"/>
+    <SourceLine classname="DVDConsoleUI" start="16" end="16" startBytecode="17" endBytecode="17" sourcefile="DVDConsoleUI.java" sourcepath="DVDConsoleUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="DVDGUI">
+      <SourceLine classname="DVDGUI" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+    </Class>
+    <Method classname="DVDGUI" name="processCommands" signature="()V" isStatic="false">
+      <SourceLine classname="DVDGUI" start="19" end="48" startBytecode="0" endBytecode="305" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+    </Method>
+    <SourceLine classname="DVDGUI" start="47" end="47" startBytecode="125" endBytecode="125" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+    <SourceLine classname="DVDGUI" start="47" end="47" startBytecode="125" endBytecode="125" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="DVDGUI">
+      <SourceLine classname="DVDGUI" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+    </Class>
+    <Method classname="DVDGUI" name="processCommands" signature="()V" isStatic="false">
+      <SourceLine classname="DVDGUI" start="19" end="48" startBytecode="0" endBytecode="305" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+    </Method>
+    <SourceLine classname="DVDGUI" start="37" end="42" startBytecode="50" endBytecode="115" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+    <SourceLine classname="DVDGUI" start="37" end="42" startBytecode="50" endBytecode="115" sourcefile="DVDGUI.java" sourcepath="DVDGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DVDManager">
+      <SourceLine classname="DVDManager" sourcefile="DVDManager.java" sourcepath="DVDManager.java"/>
+    </Class>
+    <Method classname="DVDManager" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DVDManager" start="12" end="33" startBytecode="0" endBytecode="320" sourcefile="DVDManager.java" sourcepath="DVDManager.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DVDManager" start="14" end="14" startBytecode="15" endBytecode="15" sourcefile="DVDManager.java" sourcepath="DVDManager.java"/>
+    <SourceLine classname="DVDManager" start="14" end="14" startBytecode="15" endBytecode="15" sourcefile="DVDManager.java" sourcepath="DVDManager.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 27 Jan 2015 11:47:55 -0800" total_classes="6" referenced_classes="23" total_bugs="13" total_size="215" num_packages="1" java_version="1.8.0_25" vm_version="25.25-b02" cpu_seconds="15.08" clock_seconds="10.68" peak_mbytes="679.95" alloc_mbytes="455.50" gc_seconds="0.18" priority_2="11" priority_1="2">
+    <PackageStats package="" total_bugs="13" total_types="6" total_size="215" priority_2="11" priority_1="2">
+      <ClassStats class="DVD" sourceFile="DVD.java" interface="false" size="21" bugs="4" priority_2="4"/>
+      <ClassStats class="DVDCollection" sourceFile="DVDCollection.java" interface="false" size="24" bugs="5" priority_2="5"/>
+      <ClassStats class="DVDConsoleUI" sourceFile="DVDConsoleUI.java" interface="false" size="78" bugs="1" priority_1="1"/>
+      <ClassStats class="DVDGUI" sourceFile="DVDGUI.java" interface="false" size="69" bugs="2" priority_2="2"/>
+      <ClassStats class="DVDManager" sourceFile="DVDManager.java" interface="false" size="21" bugs="1" priority_1="1"/>
+      <ClassStats class="DVDUserInterface" sourceFile="DVDUserInterface.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="570" invocations="2" avgMicrosecondsPerInvocation="285161" maxMicrosecondsPerInvocation="331615" standardDeviationMircosecondsPerInvocation="46454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="399" invocations="557" avgMicrosecondsPerInvocation="717" maxMicrosecondsPerInvocation="36019" standardDeviationMircosecondsPerInvocation="2415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="301" invocations="23" avgMicrosecondsPerInvocation="13119" maxMicrosecondsPerInvocation="147981" standardDeviationMircosecondsPerInvocation="31638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="291" invocations="557" avgMicrosecondsPerInvocation="524" maxMicrosecondsPerInvocation="32717" standardDeviationMircosecondsPerInvocation="2455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="128" invocations="132" avgMicrosecondsPerInvocation="976" maxMicrosecondsPerInvocation="22247" standardDeviationMircosecondsPerInvocation="2116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="72" invocations="23" avgMicrosecondsPerInvocation="3170" maxMicrosecondsPerInvocation="53123" standardDeviationMircosecondsPerInvocation="10762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="58" invocations="33" avgMicrosecondsPerInvocation="1758" maxMicrosecondsPerInvocation="18508" standardDeviationMircosecondsPerInvocation="3912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="57" invocations="32" avgMicrosecondsPerInvocation="1808" maxMicrosecondsPerInvocation="34165" standardDeviationMircosecondsPerInvocation="5920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="55" invocations="32" avgMicrosecondsPerInvocation="1739" maxMicrosecondsPerInvocation="13930" standardDeviationMircosecondsPerInvocation="3187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="54" invocations="6" avgMicrosecondsPerInvocation="9027" maxMicrosecondsPerInvocation="42795" standardDeviationMircosecondsPerInvocation="15315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="53" invocations="23" avgMicrosecondsPerInvocation="2334" maxMicrosecondsPerInvocation="14143" standardDeviationMircosecondsPerInvocation="4086"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="51" invocations="33" avgMicrosecondsPerInvocation="1558" maxMicrosecondsPerInvocation="43580" standardDeviationMircosecondsPerInvocation="7440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="49" invocations="33" avgMicrosecondsPerInvocation="1513" maxMicrosecondsPerInvocation="12858" standardDeviationMircosecondsPerInvocation="3029"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="49" invocations="32" avgMicrosecondsPerInvocation="1534" maxMicrosecondsPerInvocation="11152" standardDeviationMircosecondsPerInvocation="2677"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1422388167757" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

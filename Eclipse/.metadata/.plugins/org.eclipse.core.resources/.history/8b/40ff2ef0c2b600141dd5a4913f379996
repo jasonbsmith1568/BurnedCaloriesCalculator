@@ -1,0 +1,130 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentController {
+   private Student model;
+   private StudentView view;
+  
+
+   
+   private Scanner scan = new Scanner(System.in);
+   private BufferedWriter out = null;
+   private File studentrecords = new File("studentrecords.txt");
+   private String line;
+  
+   List<String> lines = Files.readAllLines("studentrecords.txt");
+   String[] arr = lines.toArray(new String[lines.size()]);
+
+  
+   
+   public StudentController(Student model, StudentView view){
+      this.model = model;
+      this.view = view;
+   }
+
+   public void setStudentName() {
+      System.out.println("What is the name of the student?");
+      String name = scan.nextLine();
+	   model.setName(name);
+	  
+	   
+   }
+
+   public String getStudentName(){
+      return model.getName();		
+   }
+
+   public void setStudentRollNo(){
+	   System.out.println("What is the student's roll number?");
+	   String roll = scan.nextLine();
+	   int rollNo = Integer.parseInt(roll);
+      model.setRollNo(rollNo);
+      
+   }
+
+   public int getStudentRollNo(){
+      return model.getRollNo();		
+   }
+
+   public void updateView(){				
+      view.printStudentDetails(model.getName(), model.getRollNo());
+   }
+   
+   
+  
+
+@SuppressWarnings("resource")
+public void removeStudent() throws IOException{
+	
+	    
+			File fileTemp = new File("studentrecords.tmp");
+			if(fileTemp.exists()){
+				fileTemp.delete();
+			}
+			
+	        BufferedReader file = new BufferedReader(new FileReader("studentrecords.txt"));
+	        out = new BufferedWriter(new FileWriter("studentrecords.tmp", true));
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Please enter the role number of the student you wish to delete.");
+	        
+	        String input = sc.nextLine();
+	        while ((line = file.readLine()) != null)
+	        	
+	        // this if structure determines whether or not to replace "0" or "1"
+	        if (line.contains(input)){ 
+	        	System.out.println("Line deleted");
+	        	out.write("DELETED");
+	        }
+	        else{
+	        	
+	        	
+			    out.write(line);
+			    out.newLine();
+			    
+			    
+	        }
+	         
+}
+	
+	
+	      
+	
+  
+  
+  public void save() throws IOException{
+	   
+	   try {
+		   
+		   	String output =  getStudentRollNo() + " , " + getStudentName() ;
+		   	
+		    out = new BufferedWriter(new FileWriter(studentrecords, true));
+		    out.write(output);
+		    out.newLine();
+		    
+		   
+		} 
+	   catch (IOException e) {		  
+		} 
+	   finally {
+		    if (out != null) {
+		    	out.close();
+		}
+	}
+  }
+}
+   
+  
+   
+   
+    
+   
+   
+   
+   

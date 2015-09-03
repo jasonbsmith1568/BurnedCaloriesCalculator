@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edtNumber1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hntNumber1"
+        />
+
+    <Spinner
+        android:id="@+id/sprOperator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sprItems"
+        />
+
+    <EditText
+        android:id="@+id/edtNumber2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hntNumber2"
+        />
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBtnResult"
+        android:hint="@string/lblBtnResult"
+        />
+    <EditText
+        android:id="@+id/edtResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+
+        />
+
+
+</LinearLayout>

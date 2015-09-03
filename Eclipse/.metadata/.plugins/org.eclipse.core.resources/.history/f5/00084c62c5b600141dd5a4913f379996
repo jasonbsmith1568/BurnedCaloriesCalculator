@@ -1,0 +1,117 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentController {
+   private Student model;
+   private StudentView view;
+  
+
+   
+   private Scanner scan = new Scanner(System.in);
+   private BufferedWriter out = null;
+   private File studentrecords = new File("studentrecords.txt");
+   private String line;
+   
+   
+   
+   public void studentArray(){
+	   List<String> lines;
+	try {
+		lines = Files.readAllLines(Paths.get("studentrecords.txg"), Charset.forName("UTF-8"));
+	
+	   for(String line:lines){
+	     System.out.println(line);
+	   }
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+   }
+  
+   
+   public StudentController(Student model, StudentView view){
+      this.model = model;
+      this.view = view;
+   }
+
+   public void setStudentName() {
+      System.out.println("What is the name of the student?");
+      String name = scan.nextLine();
+	   model.setName(name);
+	  
+	   
+   }
+
+   public String getStudentName(){
+      return model.getName();		
+   }
+
+   public void setStudentRollNo(){
+	   System.out.println("What is the student's roll number?");
+	   String roll = scan.nextLine();
+	   int rollNo = Integer.parseInt(roll);
+      model.setRollNo(rollNo);
+      
+   }
+
+   public int getStudentRollNo(){
+      return model.getRollNo();		
+   }
+
+   public void updateView(){				
+      view.printStudentDetails(model.getName(), model.getRollNo());
+   }
+   
+   
+  
+
+
+public void removeStudent(){
+	System.out.print("Please enter the ID number of the student you wish to remove.");
+	String input = scan.nextLine();
+	While(ar)
+}
+  public void save() throws IOException{
+	   
+	   try {
+		   
+		   	String output =  getStudentRollNo() + " , " + getStudentName() ;
+		   	
+		    out = new BufferedWriter(new FileWriter(studentrecords, true));
+		    out.write(output);
+		    out.newLine();
+		    
+		   
+		} 
+	   catch (IOException e) {		  
+		} 
+	   finally {
+		    if (out != null) {
+		    	out.close();
+		}
+	}
+  }
+}
+   
+  
+   
+   
+    
+   
+   
+   
+   

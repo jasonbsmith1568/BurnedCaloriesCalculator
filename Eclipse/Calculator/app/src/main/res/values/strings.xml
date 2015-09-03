@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="title_activity_main">Android Simple Calculator</string>
+    <string name="menu_settings">Settings</string>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="hntNumber1">Enter Number1</string>
+    <string name="hntNumber2">Enter Number2</string>
+    <string name="lblBtnResult">Show Result</string>
+
+    <string-array name="sprItems">
+        <item >+</item>
+        <item >-</item>
+        <item >x</item>
+        <item >/</item>
+    </string-array>
+
+</resources>
